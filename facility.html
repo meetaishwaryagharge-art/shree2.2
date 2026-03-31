@@ -1,0 +1,899 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shree Hospital-karad</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  
+  :root {
+    --blue: #1e88e5;
+    --blue-dark: #1565c0;
+    --blue-light: #2196f3;
+    --blue-pale: #e3f2fd;
+    --text: #333;
+    --text-light: #666;
+    --white: #fff;
+     --orange: #ed6a24;
+    --green:#0e8b72;
+  }
+
+  body { 
+     font-family: 'Poppins', sans-serif; 
+    color: var(--text); 
+    font-size: 14px;
+     line-height: 1.6;
+     }
+  a {
+     text-decoration: none; 
+     color: inherit; 
+    }
+  img { 
+    max-width: 100%;
+     display: block; 
+    }
+
+  /* ---- NAVBAR ---- */
+  .topbar {
+     background: #0e8b72;
+      padding: 6px 0; 
+    }
+  .topbar .container { 
+    display: flex;
+     justify-content: space-between; 
+     align-items: center;
+     }
+  .topbar span {
+     color: rgba(255,255,255,0.85);
+      font-size: 12px;
+       margin-right: 15px; 
+      }
+  .topbar span i {
+     margin-right: 5px;
+     }
+  .topbar .top-right a {
+     color: rgba(255,255,255,0.85);
+      font-size: 12px; 
+      margin-left: 12px;
+     }
+ /* Navbar */
+.navbar {
+padding:15px 0;
+}
+
+/* Logo */
+.logo {
+height:55px;
+}
+
+/* Nav Links */
+.navbar-nav .nav-link{
+font-size:16px;
+font-weight:500;
+color:#1E9B85;
+margin:0 12px;
+transition:0.3s;
+}
+
+.navbar-nav .nav-link:hover{
+color: #1abc9c;
+}
+
+/* Dropdown */
+.dropdown a {
+color:#1E9B85;
+}
+.dropdown:hover .dropdown-menu {
+  display: block;
+  margin-top: 0;
+  
+}
+
+
+/* Appointment Button */
+.appointment-btn{
+background:#F26B21;
+color:#fff;
+padding:10px 20px;
+border-radius:30px;
+font-weight:500;
+}
+
+.appointment-btn:hover{
+background:#F7C65D;
+color:#fff;
+}
+
+/* Responsive */
+@media (max-width:991px){
+
+.navbar-nav{
+text-align:center;
+margin-top:15px;
+}
+
+.appointment-btn{
+display:block;
+margin:15px auto;
+}
+
+}
+/*doct banner*/
+   .banner-section {
+            position: relative;
+            background: url('https://images.unsplash.com/photo-1582750433449-648ed127bb54') no-repeat center center/cover;
+            height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: #fff;
+            overflow: hidden;
+        }
+
+        .banner-section::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, #0e8b72);
+        }
+
+        .banner-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .banner-content h1 {
+            font-weight: 700;
+            font-size: 42px;
+        }
+
+        .breadcrumb-custom {
+            background: transparent;
+            justify-content: center;
+            margin-bottom: 0;
+        }
+
+        .breadcrumb-custom a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .breadcrumb-custom .breadcrumb-item + .breadcrumb-item::before {
+            color: #fff;
+        }
+
+        .settings-icon {
+            position: absolute;
+            right: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            background: #0d6efd;
+            width: 45px;
+            height: 45px;
+            border-radius: 6px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 3;
+            cursor: pointer;
+        }
+
+        .settings-icon i {
+            color: #fff;
+            font-size: 20px;
+        }
+/*facility*/
+.service-card {
+     background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+    transition: 0.4s ease;
+    height: 100%;
+    }
+
+    .service-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+    }
+
+    .card shadow img {
+    width: 50%;
+    height: 150px;
+    object-fit: cover;
+    transition: 0.5s;
+     overflow: hidden;
+}
+.card-img-top {
+    height: 220px;  
+    object-fit: cover;
+}
+.card shadow h5{
+   font-weight: 600;
+    margin-bottom: 10px;
+    color: #1c2340;
+}
+ .card shadow   p {
+    font-size: 14px;
+    color: #6c757d;
+    margin: 0;
+}
+
+    .card-body {
+      padding: 20px;
+    }
+   .fw-bold {
+      font-weight: 600;
+      color: #0b3c49;
+      margin-top: 10px;
+    }
+
+    .learn-more {
+      color: #ed6a24;
+      font-weight: 500;
+      text-decoration: none;
+    }
+
+    .learn-more:hover {
+      letter-spacing: 1px;
+    }
+    
+
+ /* ---- FOOTER ---- */
+  .footer {
+     background: #1a252f;
+      color: rgba(255,255,255,0.75);
+       padding: 60px 0 0; }
+
+  .footer-grid { 
+    display: grid;
+     grid-template-columns: 1.5fr 1fr 1fr 1.2fr; 
+     gap: 40px;
+      margin-bottom: 40px; }
+
+  .footer h4 {
+     font-family: 'Poppins', sans-serif;
+      font-size: 16px; 
+      font-weight: 600; 
+      color: var(--white); 
+      margin-bottom: 16px; 
+    }
+  .footer p {
+     font-size: 13px;
+      line-height: 1.8; 
+    }
+  .footer-links { 
+    list-style: none;
+   }
+  .footer-links li 
+  { margin-bottom: 8px;
+   }
+  .footer-links a { 
+    font-size: 13px;
+     color: rgba(255,255,255,0.7);
+      transition: color 0.2s; 
+      display: flex; 
+      align-items: center; 
+      gap: 6px; 
+    }
+  .footer-links a::before { 
+    content: '›'; 
+    color:#0e8b72;
+   }
+  .footer-links a:hover { 
+    color: #0e8b72; 
+  }
+  .footer-contact li {
+     display: flex; 
+     gap: 10px; 
+     margin-bottom: 10px;
+      font-size: 13px;
+       align-items: flex-start;
+       }
+  .footer-contact li i { 
+    color: #0e8b72;
+    margin-top: 2px; 
+  }
+  .footer .social-links {
+     display: flex;
+      gap: 10px;
+       margin-top: 16px;
+       }
+  .footer .social-links a { 
+    width: 36px; 
+    height: 36px;
+     border-radius: 50%; 
+     background: rgba(255,255,255,0.1); 
+     display: flex; 
+     align-items: center;
+      justify-content: center;
+       color: rgba(255,255,255,0.7); 
+       transition: all 0.2s; 
+      }
+  .footer .social-links a:hover {
+     background:#0e8b72;
+      color: var(--white); 
+    }
+  .footer-bottom {
+     border-top: 1px solid rgba(255,255,255,0.1); 
+     padding: 18px 0;
+      text-align: center; 
+      font-size: 13px; 
+      color: rgba(255,255,255,0.5); 
+    }
+
+  /* Section backgrounds */
+  .bg-light { background: #f8fbff; }
+  </style>
+  </head>
+<body>
+
+<!-- TOP BAR -->
+<div class="topbar">
+  <div class="container">
+    <div>
+      <span><i class="fas fa-phone"></i> 02164 221 082</span>
+      <span><i class="fas fa-envelope"></i>centremanager@nayesha.com</span>
+      <span><i class="fas fa-map-marker-alt"></i>Shree Hospital,Rukmini Nagar, Karad</span>
+    </div>
+    <div class="top-right">
+      <a href="https://www.facebook.com/people/Shree-Hospital-Karad/61587661328336/"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://www.instagram.com/shreehospitalkarad/"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.linkedin.com/company/shree-hospital-karad/"><i class="fab fa-linkedin-in"></i></a>
+      <a href="#"><i class="fab fa-youtube"></i></a>
+      
+    </div>
+  </div>
+</div>
+
+<!-- NAVBAR START -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+<div class="container">
+
+<!-- Logo -->
+<a class="navbar-brand" href="#">
+<img src="https://www.shreehospitalkarad.com/assets/img/Logo_Final_2.png" class="logo">
+</a>
+
+<!-- Mobile Toggle -->
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+<span class="navbar-toggler-icon"></span>
+</button>
+
+<!-- Menu -->
+<div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+
+<ul class="navbar-nav">
+
+<li class="nav-item">
+<a class="nav-link" href="index.html">Home</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="aboutus.html">About</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="servies.html">Services</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="facility.html">Facility</a>
+</li>
+<!-- Doctors Dropdown -->
+<li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button"
+             data-bs-toggle="dropdown">
+            Doctors
+          </a>
+
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="doctor.html">Our Director</a></li>
+            <li><a class="dropdown-item" href="associator.html">Our Associates</a></li>
+            
+          </ul>
+        </li>
+
+<li class="nav-item">
+<a class="nav-link" href="blog.html">Blog</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="contact-us.html">Contact</a>
+</li>
+
+</ul>
+
+</div>
+
+<!-- Appointment Button -->
+<a href="appointment.html" class="btn appointment-btn">
+Book Appointment
+</a>
+
+</div>
+</nav>
+
+<!--banner-->
+<section class="banner-section">
+    <div class="banner-content">
+        <h1>Our Facility</h1>
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb breadcrumb-custom">
+                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                <li class="breadcrumb-item active text-white">Facility</li>
+            </ol>
+        </nav>
+    </div>
+</section>
+
+<!--facility-->
+<section class="services-section py-5">
+  <div class="container">
+  <div class="row g-4">
+
+    <!-- Card 1 -->
+           <div class="col-md-4">
+        <div class="card shadow border-0 h-100">
+          <img src="https://admin.shreehospitalkarad.com:9789/static/FaciliteImages/20230930783242.JPG" class="card-img-top" alt="RO System">
+          <div class="card-body">
+            <h5 class="fw-bold">RO System</h5>
+            <p> we understand the importance of providing pure and safe drinking water for our patients, staff, and visitors.</p>
+            
+            <!-- Button Trigger Modal -->
+            <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#roModal">
+              Learn More
+            </button>
+          </div>
+        </div>
+      </div>
+
+    <!-- Card 2 -->
+      <div class="col-md-4">
+        <div class="card shadow border-0 h-100">
+          <img src="https://admin.shreehospitalkarad.com:9789/static/FaciliteImages/20230930701469.JPG" class="card-img-top" alt="Transformer">
+          <div class="card-body">
+            <h5 class="fw-bold">Transformer</h5>
+            <p>It is useful for astable and reliable supply of electricity, which is essential for various aspects of patient...</p>
+
+            <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#transformerModal">
+              Learn More
+            </button>
+          </div>
+        </div>
+      </div>
+    
+   
+    <!-- Card 3 -->
+<div class="col-md-4">
+        <div class="card shadow border-0 h-100">
+          <img src="https://admin.shreehospitalkarad.com:9789/static/FaciliteImages/20230908629276.jpg" class="card-img-top" alt="Canteen">
+          <div class="card-body">
+            <h5 class="fw-bold">Canteen</h5>
+            <p>The Hospital has a well-equipped Catering Facility for Patients, their Relatives, Doctors and staff, and even for any walk-in person.</p>
+
+            <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#canteenModal">
+              Learn More
+            </button>
+          </div>
+        </div>
+      </div>
+
+<!-- Card 4 -->
+<div class="col-md-4">
+        <div class="card shadow border-0 h-100">
+          <img src="https://admin.shreehospitalkarad.com:9789/static/FaciliteImages/20230930142464.jpeg" class="card-img-top" alt="Canteen">
+          <div class="card-body">
+            <h5 class="fw-bold">Elevator</h5>
+            <p> At Shree Hospital, we are dedicated to ensuring that every aspect of your healthcare journey is as comfortable and accessible as possible.</p>
+
+            <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#elevatorModal">
+              Learn More
+            </button>
+          </div>
+        </div>
+      </div>
+
+<!-- Card 5-->
+<div class="col-md-4">
+        <div class="card shadow border-0 h-100">
+          <img src="https://admin.shreehospitalkarad.com:9789/static/FaciliteImages/20230913100241.jpg" class="card-img-top" alt="Canteen">
+          <div class="card-body">
+            <h5 class="fw-bold">I. P. D. Billing</h5>
+            <p>  OPD full form is the outpatient department, whereas IPD stands for inpatient department. In the outpatient department (OPD), there is no requirement
+          </p></p>
+
+            <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#ipdModal">
+              Learn More
+            </button>
+          </div>
+        </div>
+      </div>
+<!-- Card 6-->
+<div class="col-md-4">
+        <div class="card shadow border-0 h-100">
+          <img src="https://admin.shreehospitalkarad.com:9789/static/FaciliteImages/20230930271813.JPG" class="card-img-top" alt="Canteen">
+          <div class="card-body">
+            <h5 class="fw-bold">Generator</h5>
+            <p> We recognize the critical importance of a continuous power supply for the delivery of quality healthcare. Our dedicated generator facility...
+          </p></p>
+
+            <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#generatorModal">
+              Learn More
+            </button>
+          </div>
+        </div>
+      </div>
+<!-- Card 7-->
+<div class="col-md-4">
+        <div class="card shadow border-0 h-100">
+          <img src="https://admin.shreehospitalkarad.com:9789/static/FaciliteImages/20230930281086.jpeg" class="card-img-top" alt="Canteen">
+          <div class="card-body">
+            <h5 class="fw-bold">Medical Store</h5>
+            <p>Your one-stop destination for all your healthcare product needs. We understand that your health and well-being are of utmost importance... </p>
+
+            <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#medicalModal">
+              Learn More
+            </button>
+          </div>
+        </div>
+      </div>
+<!-- Card 8-->
+<div class="col-md-4">
+        <div class="card shadow border-0 h-100">
+          <img src="https://admin.shreehospitalkarad.com:9789/static/FaciliteImages/20230930436701.JPG" class="card-img-top" alt="Canteen">
+          <div class="card-body">
+            <h5 class="fw-bold">Ambulance as well as Equipped Cardiac Ambulance</h5>
+            <p> We believe that comprehensive healthcare extends beyond treatment within our walls. That's why we're proud to offer our Medical Store facility...</p>
+
+            <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#ambuModal">
+              Learn More
+            </button>
+          </div>
+        </div>
+      </div>
+<!-- Card 9-->
+<div class="col-md-4">
+        <div class="card shadow border-0 h-100">
+          <img src="https://admin.shreehospitalkarad.com:9789/static/FaciliteImages/20230930171881.JPG" class="card-img-top" alt="Canteen">
+          <div class="card-body">
+            <h5 class="fw-bold">In House Laundry</h5>
+            <p>we take great pride in our commitment to providing the highest standards of patient care and safety. Our in-house laundry service is an...</p>
+
+            <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#houseModal">
+              Learn More
+            </button>
+          </div>
+        </div>
+      </div>
+<!-- Card 10-->
+<div class="col-md-4">
+        <div class="card shadow border-0 h-100">
+          <img src="https://admin.shreehospitalkarad.com:9789/static/FaciliteImages/20230912438660.jpg" class="card-img-top" alt="Canteen">
+          <div class="card-body">
+            <h5 class="fw-bold">Pathology Lab</h5>
+            <p>We understand that accurate and timely diagnostics are the cornerstone of effective healthcare. That's why our Pathology Lab stands..</p>
+
+            <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#pathModal">
+              Learn More
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- Card 11-->
+<div class="col-md-4">
+        <div class="card shadow border-0 h-100">
+          <img src="https://admin.shreehospitalkarad.com:9789/static/FaciliteImages/20230930738255.jpg" class="card-img-top" alt="Canteen">
+          <div class="card-body">
+            <h5 class="fw-bold">Service Available 24 Hours</h5>
+            <p>At Shree Hospital , we understand that health concerns don't always adhere to a 9-to-5 schedule. That's why we're proud to offer...</p>
+
+            <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#serModal">
+              Learn More
+            </button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+  
+<!--learn more-->
+<!--card1-->
+<div class="modal fade" id="roModal" tabindex="-1">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">RO System</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <p>
+          we understand the importance of providing pure and safe drinking water for our patients, staff, and visitors. Our RO system service is an integral part of our commitment to patient care and safety.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--card2-->
+<div class="modal fade" id="transformerModal" tabindex="-1">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Transformer</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <p>
+          It is useful for astable and reliable supply of electricity, which is essential for various aspects of patient care and hospital operations.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--card3-->
+<div class="modal fade" id="canteenModal" tabindex="-1">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Canteen</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <p>
+         The Hospital has a well-equipped Catering Facility for Patients, their Relatives, Doctors and staff, and even for any walk-in person. The primary aspect of the canteen is to provide quality and hygienically safe food to all who come in.</p><p>The Main Kitchen for all the outlets is in the "B" wing of Basement. Kitchen is well equipped with many automatic and latest types of equipments. Steam heating is used for cooking so that the nutrients in the food could be maintained.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--card4-->
+<div class="modal fade" id="elevatorModal" tabindex="-1">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Elevator</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <p>
+         At Shree Hospital, we are dedicated to ensuring that every aspect of your healthcare journey is as comfortable and accessible as possible. Our modern Elevator Facility is designed to provide easy access for patients, visitors, and staff throughout our hospital, making your experience convenient and stress-free.</p><p>Our elevators are equipped with features to accommodate patients with mobility challenges, including wide entryways, handrails, and braille signage for the visually impaired.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--card5-->
+<div class="modal fade" id="ipdModal" tabindex="-1">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">I. P. D. Billing (24 hours)</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <p>
+         OPD full form is the outpatient department, whereas IPD stands for inpatient department. In the outpatient department (OPD), there is no requirement to admit a patient in a hospital, but in an inpatient department a patient is admitted to a clinic or hospital for at least 24 hours.</p><p> If we look at cost-wise, there is a difference. Inpatient Department (IPD) is slightly costlier than OPD. The frequency of visits to a hospital or clinic may be more in OPD, whereas in IPD, a patient usually gets discharged when
+<ul>
+  <li>Accessible Anytime</li>
+  <li>
+Patient-Centered Approach
+  </li>
+</ul>
+
+
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!--card6-->
+<div class="modal fade" id="generatorModal" tabindex="-1">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Generator</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <p>
+          We recognize the critical importance of a continuous power supply for the delivery of quality healthcare. Our dedicated generator facility stands as a reliable guardian, ensuring that our hospital remains fully operational even in the face of power outages.</p><p> Our advanced generator system seamlessly takes over in the event of a power outage, ensuring uninterrupted electricity supply throughout the hospital. The generator facility also powers essential safety and security systems.
+<ul>
+  <li>Patient Care Continuity</li>
+  <li>Safety and Security</li>
+</ul>
+ </p>
+      </div>
+    </div>
+  </div>
+</div>
+<!--card7-->
+<div class="modal fade" id="medicalModal" tabindex="-1">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Medical Store</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <p>
+         Your one-stop destination for all your healthcare product needs. We understand that your health and well-being are of utmost importance, and we are committed to providing you with a wide range of high-quality medical supplies, medications, and healthcare essentials.</p><p> Whether you're a patient recovering from an illness or surgery, a healthcare professional seeking reliable supplies, or a concerned family member looking after a loved one, our store is here to serve you.
+<ul>
+  <li>Medications</li>
+  <li>Quality Assurance</li>
+  <li>Medical Supplies</li>
+  <li>Pharmacy Experts
+</li>
+</ul>
+ </p>
+      </div>
+    </div>
+  </div>
+</div>
+<!--card8-->
+<div class="modal fade" id="ambuModal" tabindex="-1">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Ambulance as well as Equipped Cardiac Ambulance</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <p>
+         We believe that comprehensive healthcare extends beyond treatment within our walls. That's why we're proud to offer our Medical Store facility, dedicated to providing you with easy access to a wide range of quality medications and healthcare products.</p><p>Our store stocks a comprehensive selection of prescription and over-the-counter medications to meet your healthcare needs. We source our pharmaceuticals from reputable suppliers, ensuring that you receive safe, effective, and high-quality medications.
+<ul>
+  <li>Facilities available</li>
+  <li>Facilitiess</li>
+  <li>facility</li>
+</ul>
+ </p>
+      </div>
+    </div>
+  </div>
+</div>
+<!--card9-->
+<div class="modal fade" id="houseModal" tabindex="-1">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">In House Laundry</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <p>
+        we take great pride in our commitment to providing the highest standards of patient care and safety. Our in-house laundry service is an integral part of this commitment.
+ </p>
+      </div>
+    </div>
+  </div>
+</div>
+<!--card10-->
+<div class="modal fade" id="pathModal" tabindex="-1">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Pathology Lab</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <p>
+       We understand that accurate and timely diagnostics are the cornerstone of effective healthcare. That's why our Pathology Lab stands as a beacon of precision, reliability, and commitment to patient well-being. Our lab ensures the highest level of accuracy and efficiency in diagnostic testing.</p><p> We offer a wide range of diagnostic services, including blood tests, urine analysis, tissue biopsy, microbiology, and more.
+<ul>
+  <li>Cutting-Edge Technology</li>
+  <li>Comprehensive Testing</li>
+  <li>Timely Results</li>
+</ul>
+ </p>
+      </div>
+    </div>
+  </div>
+</div>
+<!--card11-->
+<div class="modal fade" id="serModal" tabindex="-1">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Service Available 24 Hours</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <p>
+          At Shree Hospital , we understand that health concerns don't always adhere to a 9-to-5 schedule. That's why we're proud to offer comprehensive medical care and support 24 hours a day, 7 days a week. Our commitment to your well-being is unwavering, and our doors are always open to provide the highest quality healthcare whenever you need it.</p><p> Our advanced diagnostic services, including radiology and laboratory facilities, are accessible 24/7 to provide timely and accurate assessments for your healthcare needs.
+<ul>
+  <li>Continuous Medical Care</li>
+  <li>Emergency Services</li>
+  <li>Access to Specialized Care</li>
+  <li>Diagnostic Services</li>
+</ul>
+ </p>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+         <!-- Logo Image and Text Section -->
+        <div class="footer-logo-wrapper" style="display: flex; align-items: center; margin-bottom: 20px; gap: 10px;">
+          <!-- Image Tag: Yahan apni logo file ka path daalein -->
+          <img src="https://www.shreehospitalkarad.com/assets/img/Logo_Final_2.png" alt="Shree Hospital Logo" style="height: 50px; width: auto;">
+          
+          <div class="logo-text" style="font-size: 24px; font-weight: 700; font-family: 'Poppins', sans-serif;">
+            <span style="color: #1E9B85;">Shree</span><span style="color: rgba(255,255,255,0.85)">Hospital</span>
+          </div>
+        </div>
+
+        <p style="color: rgba(255,255,255,0.7); line-height: 1.6; font-size: 14px;">
+          Shree Hospital Karad is committed to delivering quality healthcare services with compassion, advanced technology, and patient-centered treatment. Your health and safety are always our top priority.
+        </p>
+        <div class="social-links">
+          <a href="https://www.facebook.com/people/Shree-Hospital-Karad/61587661328336/"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/shreehospitalkarad/"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.linkedin.com/company/shree-hospital-karad/"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+          
+          
+        </div>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="aboutus.html">Aboutus</a></li>
+          <li><a href="servies.html">Servies</a></li>
+          <li><a href="doctor.html">Doctors</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact-us.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Our Services</h4>
+        <ul class="footer-links">
+          <li><a href="servies.html">laboretory service</a></li>
+          <li><a href="servies.html">Cardiology</a></li>
+          <li><a href="servies.html">Neurology</a></li>
+          <li><a href="servies.html">Orthopedics</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact Info</h4>
+        <ul class="footer-contact" style="list-style: none;">
+          <li><i class="fas fa-map-marker-alt"></i> Shree Hospital,Rukmini Nagar, Karad</li>
+          <li><i class="fas fa-phone-alt"></i>  02164 221 082</li>
+          <li><i class="fas fa-envelope"></i>centremanager@nayesha.com</li>
+          <li><i class="fas fa-clock"></i>Open 24 hours</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">
+      <p>© 2026 ShreeHospital. All Rights Reserved. 
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+ <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+</body>
+</html>

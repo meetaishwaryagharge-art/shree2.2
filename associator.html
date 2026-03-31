@@ -1,0 +1,2050 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shree Hospital-karad</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<style>
+   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  
+  :root {
+    --blue: #1e88e5;
+    --blue-dark: #1565c0;
+    --blue-light: #2196f3;
+    --blue-pale: #e3f2fd;
+    --text: #333;
+    --text-light: #666;
+    --white: #fff;
+     --orange: #ed6a24;
+    --green:#0e8b72;
+  }
+
+  body { 
+    font-family: 'Poppins', sans-serif; 
+    color: var(--text); 
+    font-size: 14px;
+     line-height: 1.6;
+     }
+  a {
+     text-decoration: none; 
+     color: inherit; 
+    }
+  img { 
+    max-width: 100%;
+     display: block; 
+    }
+
+  /* ---- NAVBAR ---- */
+  .topbar {
+     background: #0e8b72;
+      padding: 6px 0; 
+    }
+  .topbar .container { 
+    display: flex;
+     justify-content: space-between; 
+     align-items: center;
+     }
+  .topbar span {
+     color: rgba(255,255,255,0.85);
+      font-size: 12px;
+       margin-right: 15px; 
+      }
+  .topbar span i {
+     margin-right: 5px;
+     }
+  .topbar .top-right a {
+     color: rgba(255,255,255,0.85);
+      font-size: 12px; 
+      margin-left: 12px;
+     }
+/* Navbar */
+.navbar {
+padding:15px 0;
+}
+
+/* Logo */
+.logo {
+height:55px;
+}
+
+/* Nav Links */
+.navbar-nav .nav-link{
+font-size:16px;
+font-weight:500;
+color:#1E9B85;
+margin:0 12px;
+transition:0.3s;
+}
+
+.navbar-nav .nav-link:hover{
+color: #1abc9c;
+}
+
+/* Dropdown */
+.dropdown a {
+color:#1E9B85;
+}
+.dropdown:hover .dropdown-menu {
+  display: block;
+  margin-top: 0;
+  
+}
+
+
+/* Appointment Button */
+.appointment-btn{
+background:#ed6a24;
+color:#fff;
+padding:10px 20px;
+border-radius:30px;
+font-weight:500;
+}
+
+.appointment-btn:hover{
+background:#F7C65D;
+color:#fff;
+}
+
+/* Responsive */
+@media (max-width:991px){
+
+.navbar-nav{
+text-align:center;
+margin-top:15px;
+}
+
+.appointment-btn{
+display:block;
+margin:15px auto;
+}
+
+}
+
+/*doct banner*/
+   .banner-section {
+            position: relative;
+            background: url('https://images.unsplash.com/photo-1582750433449-648ed127bb54') no-repeat center center/cover;
+            height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: #fff;
+            overflow: hidden;
+        }
+
+        .banner-section::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, #0e8b72);
+        }
+
+        .banner-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .banner-content h1 {
+            font-weight: 700;
+            font-size: 42px;
+        }
+
+        .breadcrumb-custom {
+            background: transparent;
+            justify-content: center;
+            margin-bottom: 0;
+        }
+
+        .breadcrumb-custom a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .breadcrumb-custom .breadcrumb-item + .breadcrumb-item::before {
+            color: #fff;
+        }
+
+        .settings-icon {
+            position: absolute;
+            right: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            background: #0d6efd;
+            width: 45px;
+            height: 45px;
+            border-radius: 6px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 3;
+            cursor: pointer;
+        }
+
+        .settings-icon i {
+            color: #fff;
+            font-size: 20px;
+        }
+        /*doct images*/
+body{
+            background:#f4f4f4;
+        }
+
+        .doctor-card{
+            background:#fff;
+            border-radius:10px;
+            overflow:hidden;
+            box-shadow:0 4px 12px rgba(0,0,0,0.08);
+            transition:0.3s;
+            position:relative;
+        }
+
+        .doctor-card:hover{
+            transform:translateY(-5px);
+        }
+
+        .doctor-img{
+            position:relative;
+            overflow:hidden;
+        }
+
+        .doctor-img img{
+            width:100%;
+            height:320px;
+            object-fit:cover;
+            transition:0.4s;
+        }
+.doctor-img i{
+    color: #F26B21;
+}
+        .overlay{
+            position:absolute;
+            top:0;
+            left:0;
+            width:100%;
+            height:100%;
+            background:rgba(255,255,255,0.8);
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            opacity:0;
+            transition:0.4s;
+        }
+
+        .doctor-card:hover .overlay{
+            opacity:1;
+        }
+
+        .overlay button{
+            background: #ed6a24;
+            color:#fff;
+            border:none;
+            padding:8px 18px;
+            border-radius:5px;
+            font-size:14px;
+        }
+
+        .doctor-info{
+            padding:20px;
+            text-align:center;
+        }
+
+        .doctor-info span{
+          font-family: 'Poppins', sans-serif;
+            font-size:13px;
+            color:#6c757d;
+        }
+.doctor-info i{
+    color: #F26B21;
+}
+        .doctor-info h5{
+          font-family: 'Poppins', sans-serif;
+            margin-top:6px;
+            font-weight:600;
+        }
+        /*popup*/
+        .bg-orange {
+    background: linear-gradient(180deg, #f5a142, #f39c12);
+}
+
+.doctor-img-wrapper {
+    border: 5px solid #fff;
+    border-radius: 15px;
+    padding: 5px;
+    display: inline-block;
+}
+
+.doctor-img {
+    border-radius: 12px;
+}
+
+.doctor-name-box {
+    background: #f4f4f4;
+    padding: 15px;
+    border-radius: 8px;
+    font-weight: 600;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.nav-pills .nav-link {
+    background: #f8f9fa;
+    margin-right: 10px;
+    font-weight: 600;
+    color: #333;
+}
+
+.nav-pills .nav-link.active {
+    background: #f39c12;
+    color: #fff;
+}
+
+.info-box {
+    background: #f7f7f7;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+.btn{
+  background: #f39c12;
+    color: #fff;
+}
+.btn :hover{
+  background:#F7C65D;
+color:#fff;
+}
+/* ---- FOOTER ---- */
+  .footer {
+     background: #1a252f;
+      color: rgba(255,255,255,0.75);
+       padding: 60px 0 0; }
+
+  .footer-grid { 
+    display: grid;
+     grid-template-columns: 1.5fr 1fr 1fr 1.2fr; 
+     gap: 40px;
+      margin-bottom: 40px; }
+
+  .footer h4 {
+     font-family: 'Poppins', sans-serif;
+      font-size: 16px; 
+      font-weight: 600; 
+      color: var(--white); 
+      margin-bottom: 16px; 
+    }
+  .footer p {
+     font-size: 13px;
+      line-height: 1.8; 
+    }
+  .footer-links { 
+    list-style: none;
+   }
+  .footer-links li 
+  { margin-bottom: 8px;
+   }
+  .footer-links a { 
+    font-size: 13px;
+     color: rgba(255,255,255,0.7);
+      transition: color 0.2s; 
+      display: flex; 
+      align-items: center; 
+      gap: 6px; 
+    }
+  .footer-links a::before { 
+    content: '›'; 
+    color:#0e8b72;
+   }
+  .footer-links a:hover { 
+    color: #0e8b72; 
+  }
+  .footer-contact li {
+     display: flex; 
+     gap: 10px; 
+     margin-bottom: 10px;
+      font-size: 13px;
+       align-items: flex-start;
+       }
+  .footer-contact li i { 
+    color: #0e8b72;
+    margin-top: 2px; 
+  }
+  .footer .social-links {
+     display: flex;
+      gap: 10px;
+       margin-top: 16px;
+       }
+  .footer .social-links a { 
+    width: 36px; 
+    height: 36px;
+     border-radius: 50%; 
+     background: rgba(255,255,255,0.1); 
+     display: flex; 
+     align-items: center;
+      justify-content: center;
+       color: rgba(255,255,255,0.7); 
+       transition: all 0.2s; 
+      }
+  .footer .social-links a:hover {
+     background:#0e8b72;
+      color: var(--white); 
+    }
+  .footer-bottom {
+     border-top: 1px solid rgba(255,255,255,0.1); 
+     padding: 18px 0;
+      text-align: center; 
+      font-size: 13px; 
+      color: rgba(255,255,255,0.5); 
+    }
+
+  /* Section backgrounds */
+  .bg-light { background: #f8fbff; }
+
+</style>
+</head>
+<body>
+
+<!-- TOP BAR -->
+<div class="topbar">
+  <div class="container">
+    <div>
+      <span><i class="fas fa-phone"></i> 02164 221 082</span>
+      <span><i class="fas fa-envelope"></i>centremanager@nayesha.com</span>
+      <span><i class="fas fa-map-marker-alt"></i>Shree Hospital,Rukmini Nagar, Karad</span>
+    </div>
+    <div class="top-right">
+      <a href="https://www.facebook.com/people/Shree-Hospital-Karad/61587661328336/"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://www.instagram.com/shreehospitalkarad/"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.linkedin.com/company/shree-hospital-karad/"><i class="fab fa-linkedin-in"></i></a>
+      <a href="#"><i class="fab fa-youtube"></i></a>
+      
+    </div>
+  </div>
+</div>
+
+<!-- NAVBAR START -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+<div class="container">
+
+<!-- Logo -->
+<a class="navbar-brand" href="#">
+<img src="https://www.shreehospitalkarad.com/assets/img/Logo_Final_2.png" class="logo">
+</a>
+
+<!-- Mobile Toggle -->
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+<span class="navbar-toggler-icon"></span>
+</button>
+
+<!-- Menu -->
+<div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+
+<ul class="navbar-nav">
+
+<li class="nav-item">
+<a class="nav-link" href="index.html">Home</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="aboutus.html">About</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="servies.html">Services</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="facility.html">Facility</a>
+</li>
+<!-- Doctors Dropdown -->
+<li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button"
+             data-bs-toggle="dropdown">
+            Doctors
+          </a>
+
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="doctor.html">Our Director</a></li>
+            <li><a class="dropdown-item" href="associator.html">Our Associates</a></li>
+            
+          </ul>
+        </li>
+
+<li class="nav-item">
+<a class="nav-link" href="blog.html">Blog</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="contact-us.html">Contact</a>
+</li>
+
+</ul>
+
+</div>
+
+<!-- Appointment Button -->
+<a href="appointment.html" class="btn appointment-btn">
+Book Appointment
+</a>
+
+</div>
+</nav>
+<!--banner-->
+<section class="banner-section">
+    <div class="banner-content">
+        <h1>Meet Our Associators</h1>
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb breadcrumb-custom">
+                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                <li class="breadcrumb-item active text-white">Associators</li>
+            </ol>
+        </nav>
+    </div>
+
+    
+</section>
+
+<!--doctor images-->
+<section class="container py-5">
+    <div class="row g-4">
+
+        <!-- Doctor Card1 -->
+        <div class="col-md-4">
+            <div class="doctor-card">
+                <div class="doctor-img">
+                    <img src="vijayukirade.webp" alt="">
+                    <div class="overlay">
+                        <a href="#" class="btn" data-bs-toggle="modal" data-bs-target="#doctorModal1">
+                View More
+              </a>
+                    </div>
+                </div>
+                <div class="doctor-info">
+                    <h5>Dr.Vinayak Ukirade</h5>
+                   <p> Nephrology</p>
+                    <button class="btn appointment-btn" data-bs-toggle="modal" data-bs-target="#appointmentModal1">
+Appointment
+</button>
+                </div>
+            </div>
+        </div>
+        <!--popup1-->
+<div class="modal fade" id="doctorModal1" tabindex="-1">
+  <div class="modal-dialog modal-xl modal-dialog-centered">
+    <div class="modal-content border-0 shadow-lg">
+
+      <div class="modal-body p-0">
+
+        <div class="row g-0">
+
+          <!-- LEFT SIDE -->
+          <div class="col-md-4 bg-orange text-center p-4">
+            
+            <div class="doctor-img-wrapper">
+              <img src="vijayukirade.webp" class="img-fluid rounded doctor-img" alt="Doctor">
+            </div>
+
+            <div class="doctor-name-box mt-4">
+              <i class="fa fa-user me-2"></i>
+          Dr.Vinayak Ukirade
+             <p>Nephrology</p>
+            </div>
+
+          </div>
+
+          <!-- RIGHT SIDE -->
+          <div class="col-md-8 p-4">
+
+            <!-- Tabs -->
+            <ul class="nav nav-pills mb-4" id="doctorTab" role="tablist">
+              <li class="nav-item">
+                <button class="nav-link active" data-bs-toggle="pill" data-bs-target="#basic">
+                  BASIC INFORMATION
+                </button>
+              </li>
+              <li class="nav-item">
+                <button class="nav-link" data-bs-toggle="pill" data-bs-target="#teaching">
+                  TEACHING EXPERIENCE
+                </button>
+              </li>
+              <li class="nav-item">
+                <button class="nav-link" data-bs-toggle="pill" data-bs-target="#social">
+                  SOCIAL COMMITMENTS
+                </button>
+              </li>
+            </ul>
+
+            <!-- Tab Content -->
+            <div class="tab-content">
+
+              <!-- BASIC INFO -->
+              <div class="tab-pane fade show active" id="basic">
+                <div class="info-box">
+                  <i class="fa fa-check text-warning me-2"></i>
+                 Since 1976 practicing as physician in Karad.
+                </div>
+                <h5>Schedule</h5>
+                <ul>
+                  <li>Visiting Days:</li>
+                  <li>Time Slot:</li>
+                </ul>
+             </div>
+
+              <!-- TEACHING -->
+              <div class="tab-pane fade" id="teaching">
+                <div class="info-box">
+                  <i class="fa fa-check text-warning me-2"></i>
+                  Teaching in Krishna Institute Medical Science to Post Graduate Students from last 2 years<br>
+                
+                  <i class="fa fa-check text-warning me-2"></i>
+                 Teaching in Krishna Institute Medical Science to Under Graduate Students since 8 years.<br>
+               
+                  <i class="fa fa-check text-warning me-2"></i>
+                 10 years teaching experience to B.Pharma & M.Pharma in Govt. college of Pharmacy - Karad
+                </div>
+              </div>
+
+              <!-- SOCIAL -->
+              <div class="tab-pane fade" id="social">
+                <div class="info-box">
+                  <i class="fa fa-check text-warning me-2"></i>
+                 Visiting consultant physician to Chaitanaya Hospital Gondavale once a month from last 17 years.
+                </div>
+               
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!--popup-->
+<!-- Appointment Modal -->
+
+<div class="modal fade" id="appointmentModal1" tabindex="-1">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+
+<div class="modal-header">
+<h5 class="modal-title">Book Appointment</h5>
+<button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+</div>
+
+<div class="modal-body">
+
+<form>
+
+<div class="row">
+
+<div class="col-md-6 mb-3">
+<label>Full Name</label>
+<input type="text" class="form-control" placeholder="Enter your name" required>
+</div>
+
+<div class="col-md-6 mb-3">
+<label>Email</label>
+<input type="email" class="form-control" placeholder="Enter your email">
+</div>
+
+<div class="col-md-6 mb-3">
+<label>Phone</label>
+<input type="tel" class="form-control" placeholder="Enter phone number" required>
+</div>
+
+<div class="col-md-6 mb-3">
+<label>Select Doctor</label>
+<select class="form-control">
+<option>Dr.Vinayak Ukirade</option>
+
+</select>
+</div>
+
+<div class="col-md-6 mb-3">
+<label>Appointment Date</label>
+<input type="date" class="form-control" required>
+</div>
+
+<div class="col-md-6 mb-3">
+<label>Appointment Time</label>
+<input type="time" class="form-control" required>
+</div>
+
+<div class="col-12 mb-3">
+<label>Message</label>
+<textarea class="form-control" rows="3" placeholder="Write message"></textarea>
+</div>
+
+<div class="text-center">
+<button type="submit" class="btn submit-btn">Book Appointment</button>
+</div>
+
+</div>
+
+</form>
+
+</div>
+</div>
+</div>
+</div>
+<!-- Doctor Card2 -->
+        <div class="col-md-4">
+            <div class="doctor-card">
+                <div class="doctor-img">
+                    <img src="Dr.Aditya Kulkarni.jpg" alt="">
+                    <div class="overlay">
+                        <a href="#" class="btn" data-bs-toggle="modal" data-bs-target="#doctorModal2">
+                View More
+              </a>
+                    </div>
+                </div>
+                <div class="doctor-info">
+                <h5>Dr.Aditya Kulkarni</h5>
+                <p>Gastroenterology</p>
+                 <button class="btn appointment-btn" data-bs-toggle="modal" data-bs-target="#appointmentModal2">
+Appointment
+</button>
+                </div>
+            </div>
+        </div>
+
+<!--popup2-->
+<div class="modal fade" id="doctorModal2" tabindex="-1">
+  <div class="modal-dialog modal-xl modal-dialog-centered">
+    <div class="modal-content border-0 shadow-lg">
+
+      <div class="modal-body p-0">
+
+        <div class="row g-0">
+
+          <!-- LEFT SIDE -->
+          <div class="col-md-4 bg-orange text-center p-4">
+            
+            <div class="doctor-img-wrapper">
+              <img src="Dr.Aditya Kulkarni.jpg" class="img-fluid rounded doctor-img" alt="Doctor">
+            </div>
+
+            <div class="doctor-name-box mt-4">
+              <i class="fa fa-user me-2"></i>
+         Dr.Aditya Kulkarni
+            <p>Gastroenterology</p>
+            </div>
+
+          </div>
+
+          <!-- RIGHT SIDE -->
+          <div class="col-md-8 p-4">
+
+            <!-- Tabs -->
+            <ul class="nav nav-pills mb-4" id="doctorTab" role="tablist">
+              <li class="nav-item">
+                <button class="nav-link active" data-bs-toggle="pill" data-bs-target="#basic2">
+                  BASIC INFORMATION
+                </button>
+              </li>
+              <li class="nav-item">
+                <button class="nav-link" data-bs-toggle="pill" data-bs-target="#teaching2">
+                  TEACHING EXPERIENCE
+                </button>
+              </li>
+              <li class="nav-item">
+                <button class="nav-link" data-bs-toggle="pill" data-bs-target="#social2">
+                  SOCIAL COMMITMENTS
+                </button>
+              </li>
+            </ul>
+
+            <!-- Tab Content -->
+            <div class="tab-content">
+
+              <!-- BASIC INFO -->
+              <div class="tab-pane fade show active" id="basic2">
+                <div class="info-box">
+                  <i class="fa fa-check text-warning me-2"></i>
+                 Since 1976 practicing as physician in Karad.
+                </div>
+             
+             <h5>Schedule</h5>
+                <ul>
+                  <li>Visiting Days: 28th March/ Once/ Twice in a month on call.</li>
+                  <li>Time Slot: 28th March/11:00:00</li>
+                </ul>
+                </div>
+              <!-- TEACHING -->
+              <div class="tab-pane fade" id="teaching2">
+                <div class="info-box">
+                  <i class="fa fa-check text-warning me-2"></i>
+                  8 months experience at Sassoon Gen Hospital and B.J Medical college-Pune.
+                </div>
+              </div>
+
+              <!-- SOCIAL -->
+              <div class="tab-pane fade" id="social2">
+                <div class="info-box">
+                  <i class="fa fa-check text-warning me-2"></i>
+                 Visiting Chaitanaya Hospital Gondavale once a month from last 17 years.
+                </div>
+                 <div class="info-box">
+                  <i class="fa fa-check text-warning me-2"></i>
+                Active Participation in free medical check up camps held by IMA & other social organizations.
+                </div>
+                </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</div>
+<!--popup-->
+<!-- Appointment Modal -->
+
+<div class="modal fade" id="appointmentModal2" tabindex="-1">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+
+<div class="modal-header">
+<h5 class="modal-title">Book Appointment</h5>
+<button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+</div>
+
+<div class="modal-body">
+
+<form>
+
+<div class="row">
+
+<div class="col-md-6 mb-3">
+<label>Full Name</label>
+<input type="text" class="form-control" placeholder="Enter your name" required>
+</div>
+
+<div class="col-md-6 mb-3">
+<label>Email</label>
+<input type="email" class="form-control" placeholder="Enter your email">
+</div>
+
+<div class="col-md-6 mb-3">
+<label>Phone</label>
+<input type="tel" class="form-control" placeholder="Enter phone number" required>
+</div>
+
+<div class="col-md-6 mb-3">
+<label>Select Doctor</label>
+<select class="form-control">
+<option>Dr.Aditya Kulkarni</option>
+
+</select>
+</div>
+
+<div class="col-md-6 mb-3">
+<label>Appointment Date</label>
+<input type="date" class="form-control" required>
+</div>
+
+<div class="col-md-6 mb-3">
+<label>Appointment Time</label>
+<input type="time" class="form-control" required>
+</div>
+
+<div class="col-12 mb-3">
+<label>Message</label>
+<textarea class="form-control" rows="3" placeholder="Write message"></textarea>
+</div>
+
+<div class="text-center">
+<button type="submit" class="btn submit-btn">Book Appointment</button>
+</div>
+
+</div>
+
+</form>
+
+</div>
+</div>
+</div>
+</div>
+<!-- Doctor Card3 -->
+        <div class="col-md-4">
+            <div class="doctor-card">
+                <div class="doctor-img">
+                    <img src="Dr.Pratik Mote.jpg" alt="">
+                    <div class="overlay">
+                        <a href="#" class="btn" data-bs-toggle="modal" data-bs-target="#doctorModal3">
+                View More
+              </a>
+                    </div>
+                </div>
+                <div class="doctor-info">
+                    <h5>Dr.Pratik Mote</h5>
+                    <p>General Surgeon and Onco</p>
+                     <button class="btn appointment-btn" data-bs-toggle="modal" data-bs-target="#appointmentModal3">
+Appointment
+</button>
+                </div>
+            </div>
+        </div>
+<!--popup3-->
+<div class="modal fade" id="doctorModal3" tabindex="-1">
+  <div class="modal-dialog modal-xl modal-dialog-centered">
+    <div class="modal-content border-0 shadow-lg">
+
+      <div class="modal-body p-0">
+
+        <div class="row g-0">
+
+          <!-- LEFT SIDE -->
+          <div class="col-md-4 bg-orange text-center p-4">
+            
+            <div class="doctor-img-wrapper">
+              <img src="Dr.Pratik Mote.jpg" class="img-fluid rounded doctor-img" alt="Doctor">
+            </div>
+
+            <div class="doctor-name-box mt-4">
+              <i class="fa fa-user me-2"></i>
+          Dr.Pratik Mote
+            <p>General Surgeon and Onco</p>
+            </div>
+
+          </div>
+
+          <!-- RIGHT SIDE -->
+          <div class="col-md-8 p-4">
+
+            <!-- Tabs -->
+            <ul class="nav nav-pills mb-4" id="doctorTab" role="tablist">
+              <li class="nav-item">
+                <button class="nav-link active" data-bs-toggle="pill" data-bs-target="#basic3">
+                  BASIC INFORMATION
+                </button>
+              </li>
+              <li class="nav-item">
+                <button class="nav-link" data-bs-toggle="pill" data-bs-target="#teaching3">
+                  TEACHING EXPERIENCE
+                </button>
+              </li>
+              <li class="nav-item">
+                <button class="nav-link" data-bs-toggle="pill" data-bs-target="#social3">
+                  SOCIAL COMMITMENTS
+                </button>
+              </li>
+            </ul>
+
+            <!-- Tab Content -->
+            <div class="tab-content">
+
+              <!-- BASIC INFO -->
+              <div class="tab-pane fade show active" id="basic3">
+                <div class="info-box">
+                  <i class="fa fa-check text-warning me-2"></i>
+                 Since 1979 practicing as physician in Karad .
+                </div>
+                 <div class="info-box">
+                  <i class="fa fa-check text-warning me-2"></i>
+                 Special interest in Diabetes & Hypertension and Critical Care Medicine.
+                </div>
+                 <div class="info-box">
+                  <i class="fa fa-check text-warning me-2"></i>
+                 Life member of IMA & API
+                </div>
+             
+             <h5>Schedule</h5>
+                <ul>
+                  <li>Visiting Days: Every Tuesday</li>
+                  <li>Time Slot: 4PM To 7PM</li>
+                </ul>
+                </div>
+              <!-- TEACHING -->
+              <div class="tab-pane fade" id="teaching3">
+                <div class="info-box">
+                  <i class="fa fa-check text-warning me-2"></i>
+                 12 months experience at Sassoon Gen Hospital and B.J Medical college-Pune
+                </div>
+              </div>
+
+              <!-- SOCIAL -->
+              <div class="tab-pane fade" id="social3">
+                <div class="info-box">
+                  <i class="fa fa-check text-warning me-2"></i>
+                 Chairman of Social Club Karad for last 25 years and arranged various sports tournaments especially Badminton.
+                </div>
+                 <div class="info-box">
+                  <i class="fa fa-check text-warning me-2"></i>
+               Founder Director of Jankalyan Nagari Sahakari Patsanstha Maryadit Karad
+                </div>
+                <div class="info-box">
+                  <i class="fa fa-check text-warning me-2"></i>
+               Trustee of Jankalyan Pratishthan Karad
+                </div>
+                </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</div>
+<!--popup-->
+<!-- Appointment Modal -->
+
+<div class="modal fade" id="appointmentModal3" tabindex="-1">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+
+<div class="modal-header">
+<h5 class="modal-title">Book Appointment</h5>
+<button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+</div>
+
+<div class="modal-body">
+
+<form>
+
+<div class="row">
+
+<div class="col-md-6 mb-3">
+<label>Full Name</label>
+<input type="text" class="form-control" placeholder="Enter your name" required>
+</div>
+
+<div class="col-md-6 mb-3">
+<label>Email</label>
+<input type="email" class="form-control" placeholder="Enter your email">
+</div>
+
+<div class="col-md-6 mb-3">
+<label>Phone</label>
+<input type="tel" class="form-control" placeholder="Enter phone number" required>
+</div>
+
+<div class="col-md-6 mb-3">
+<label>Select Doctor</label>
+<select class="form-control">
+<option>Dr.Pratik Mote</option>
+
+</select>
+</div>
+
+<div class="col-md-6 mb-3">
+<label>Appointment Date</label>
+<input type="date" class="form-control" required>
+</div>
+
+<div class="col-md-6 mb-3">
+<label>Appointment Time</label>
+<input type="time" class="form-control" required>
+</div>
+
+<div class="col-12 mb-3">
+<label>Message</label>
+<textarea class="form-control" rows="3" placeholder="Write message"></textarea>
+</div>
+
+<div class="text-center">
+<button type="submit" class="btn submit-btn">Book Appointment</button>
+</div>
+
+</div>
+
+</form>
+
+</div>
+</div>
+</div>
+</div>
+<!-- Doctor Card4 -->
+        <div class="col-md-4">
+            <div class="doctor-card">
+                <div class="doctor-img">
+                    <img src="Dr.Nilesh Bakale.jpg" alt="">
+                    <div class="overlay">
+                        <a href="#" class="btn" data-bs-toggle="modal" data-bs-target="#doctorModal4">
+                View More
+              </a>
+                    </div>
+                </div>
+                <div class="doctor-info">
+                    <h5>Dr.Nilesh Bakale</h5>
+                    <p>Neuro Surgeon</p>
+                     <button class="btn appointment-btn" data-bs-toggle="modal" data-bs-target="#appointmentModal4">
+Appointment
+</button>
+                </div>
+            </div>
+        </div>
+<!--popup4-->
+<div class="modal fade" id="doctorModal4" tabindex="-1">
+  <div class="modal-dialog modal-xl modal-dialog-centered">
+    <div class="modal-content border-0 shadow-lg">
+
+      <div class="modal-body p-0">
+
+        <div class="row g-0">
+
+          <!-- LEFT SIDE -->
+          <div class="col-md-4 bg-orange text-center p-4">
+            
+            <div class="doctor-img-wrapper">
+              <img src="Dr.Nilesh Bakale.jpg" class="img-fluid rounded doctor-img" alt="Doctor">
+            </div>
+
+            <div class="doctor-name-box mt-4">
+              <i class="fa fa-user me-2"></i>
+         Dr.Nilesh Bakale
+            <p>Nero Surgeon</p>
+            </div>
+
+          </div>
+
+          <!-- RIGHT SIDE -->
+          <div class="col-md-8 p-4">
+
+            <!-- Tabs -->
+            <ul class="nav nav-pills mb-4" id="doctorTab" role="tablist">
+              <li class="nav-item">
+                <button class="nav-link active" data-bs-toggle="pill" data-bs-target="#basic4">
+                  BASIC INFORMATION
+                </button>
+              </li>
+              <li class="nav-item">
+                <button class="nav-link" data-bs-toggle="pill" data-bs-target="#teaching4">
+                  TEACHING EXPERIENCE
+                </button>
+              </li>
+              <li class="nav-item">
+                <button class="nav-link" data-bs-toggle="pill" data-bs-target="#social4">
+                  SOCIAL COMMITMENTS
+                </button>
+              </li>
+            </ul>
+
+            <!-- Tab Content -->
+            <div class="tab-content">
+
+              <!-- BASIC INFO -->
+              <div class="tab-pane fade show active" id="basic4">
+                <div class="info-box">
+                  <i class="fa fa-check text-warning me-2"></i>
+                Since 1983 practicing as physician & Intensivist in Karad.
+                </div>
+                 <div class="info-box">
+                  <i class="fa fa-check text-warning me-2"></i>
+                 Trained in Ultrasound applications in medicine & Critical Care medicine.
+                </div>
+                 <div class="info-box">
+                  <i class="fa fa-check text-warning me-2"></i>
+                 Life member of IMA API & ISCCM.
+                </div>
+            
+             <h5>Schedule</h5>
+                <ul>
+                  <li>Visiting Days:</li>
+                  <li>Time Slot:</li>
+                </ul>
+                 </div>
+              <!-- TEACHING -->
+              <div class="tab-pane fade" id="teaching4">
+                <div class="info-box">
+                  <i class="fa fa-check text-warning me-2"></i>
+                 As Associate Professor in Medicine.
+                </div>
+              </div>
+
+              <!-- SOCIAL -->
+              <div class="tab-pane fade" id="social4">
+                <div class="info-box">
+                  <i class="fa fa-check text-warning me-2"></i>
+                 Arranging various cultural programme in the town to Increase awareness & critical appreciation of serious art in people.
+                </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    </div>
+  </div>
+</div>
+</div>
+<!--popup-->
+<!-- Appointment Modal -->
+
+<div class="modal fade" id="appointmentModal4" tabindex="-1">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+
+<div class="modal-header">
+<h5 class="modal-title">Book Appointment</h5>
+<button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+</div>
+
+<div class="modal-body">
+
+<form>
+
+<div class="row">
+
+<div class="col-md-6 mb-3">
+<label>Full Name</label>
+<input type="text" class="form-control" placeholder="Enter your name" required>
+</div>
+
+<div class="col-md-6 mb-3">
+<label>Email</label>
+<input type="email" class="form-control" placeholder="Enter your email">
+</div>
+
+<div class="col-md-6 mb-3">
+<label>Phone</label>
+<input type="tel" class="form-control" placeholder="Enter phone number" required>
+</div>
+
+<div class="col-md-6 mb-3">
+<label>Select Doctor</label>
+<select class="form-control">
+<option>Dr.Nilesh Bakale</option>
+
+</select>
+</div>
+
+<div class="col-md-6 mb-3">
+<label>Appointment Date</label>
+<input type="date" class="form-control" required>
+</div>
+
+<div class="col-md-6 mb-3">
+<label>Appointment Time</label>
+<input type="time" class="form-control" required>
+</div>
+
+<div class="col-12 mb-3">
+<label>Message</label>
+<textarea class="form-control" rows="3" placeholder="Write message"></textarea>
+</div>
+
+<div class="text-center">
+<button type="submit" class="btn submit-btn">Book Appointment</button>
+</div>
+
+</div>
+
+</form>
+
+</div>
+</div>
+</div>
+</div>
+<!-- Doctor Card5 -->
+        <div class="col-md-4">
+            <div class="doctor-card">
+                <div class="doctor-img">
+                    <img src="Dr.Komal Bhosale.jpg" alt="">
+                    <div class="overlay">
+                       <a href="#" class="btn" data-bs-toggle="modal" data-bs-target="#doctorModal5">
+                View More
+              </a>
+                    </div>
+                </div>
+                <div class="doctor-info">
+                    <h5>Dr.Komal Bhosale</h5>
+                    <p>Physiotherapist</p>
+                     <button class="btn appointment-btn" data-bs-toggle="modal" data-bs-target="#appointmentModal5">
+Appointment
+</button>
+                </div>
+            </div>
+        </div>
+
+<!--popup5-->
+<div class="modal fade" id="doctorModal5" tabindex="-1">
+  <div class="modal-dialog modal-xl modal-dialog-centered">
+    <div class="modal-content border-0 shadow-lg">
+
+      <div class="modal-body p-0">
+
+        <div class="row g-0">
+
+          <!-- LEFT SIDE -->
+          <div class="col-md-4 bg-orange text-center p-4">
+            
+            <div class="doctor-img-wrapper">
+              <img src="Dr.Komal Bhosale.jpg" class="img-fluid rounded doctor-img" alt="Doctor">
+            </div>
+
+            <div class="doctor-name-box mt-4">
+              <i class="fa fa-user me-2"></i>
+       Dr.Komal Bhosale
+            <p>Physiotherapist</p>
+            </div>
+
+          </div>
+
+          <!-- RIGHT SIDE -->
+          <div class="col-md-8 p-4">
+
+            <!-- Tabs -->
+            <ul class="nav nav-pills mb-4" id="doctorTab" role="tablist">
+              <li class="nav-item">
+                <button class="nav-link active" data-bs-toggle="pill" data-bs-target="#basic5">
+                  BASIC INFORMATION
+                </button>
+              </li>
+              <li class="nav-item">
+                <button class="nav-link" data-bs-toggle="pill" data-bs-target="#teaching5">
+                  TEACHING EXPERIENCE
+                </button>
+              </li>
+              <li class="nav-item">
+                <button class="nav-link" data-bs-toggle="pill" data-bs-target="#social5">
+                  SOCIAL COMMITMENTS
+                </button>
+              </li>
+            </ul>
+
+            <!-- Tab Content -->
+            <div class="tab-content">
+
+              <!-- BASIC INFO -->
+              <div class="tab-pane fade show active" id="basic5">
+                <div class="info-box">
+                  <i class="fa fa-check text-warning me-2"></i>
+               MD ( Medicine ) Indian Academy of Echocardiography Accredition – level 1
+                </div>
+                 <div class="info-box">
+                  <i class="fa fa-check text-warning me-2"></i>
+                 Since 1992 practicing as physician in Karad
+                </div>
+                 <div class="info-box">
+                  <i class="fa fa-check text-warning me-2"></i>
+                 Incharge Echo & TMT dept. from last 18 years in Krishna Institute Medical Science-Karad
+                </div>
+                <div class="info-box">
+                  <i class="fa fa-check text-warning me-2"></i>
+                Member of association of Physicians of India
+                </div>
+             
+             <h5>Schedule</h5>
+                <ul>
+                  <li>Visiting Days:</li>
+                  <li>Time Slot:</li>
+                </ul>
+                </div>
+              <!-- TEACHING -->
+              <div class="tab-pane fade" id="teaching5">
+                <div class="info-box">
+                  <i class="fa fa-check text-warning me-2"></i>
+                 No data Available
+                </div>
+              </div>
+
+              <!-- SOCIAL -->
+              <div class="tab-pane fade" id="social5">
+                <div class="info-box">
+                  <i class="fa fa-check text-warning me-2"></i>
+                  No data Available
+                </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    </div>
+  </div>
+</div>
+</div>
+<!--popup-->
+<!-- Appointment Modal -->
+
+<div class="modal fade" id="appointmentModal5" tabindex="-1">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+
+<div class="modal-header">
+<h5 class="modal-title">Book Appointment</h5>
+<button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+</div>
+
+<div class="modal-body">
+
+<form>
+
+<div class="row">
+
+<div class="col-md-6 mb-3">
+<label>Full Name</label>
+<input type="text" class="form-control" placeholder="Enter your name" required>
+</div>
+
+<div class="col-md-6 mb-3">
+<label>Email</label>
+<input type="email" class="form-control" placeholder="Enter your email">
+</div>
+
+<div class="col-md-6 mb-3">
+<label>Phone</label>
+<input type="tel" class="form-control" placeholder="Enter phone number" required>
+</div>
+
+<div class="col-md-6 mb-3">
+<label>Select Doctor</label>
+<select class="form-control">
+<option>Dr.Komal Bhosale</option>
+
+</select>
+</div>
+
+<div class="col-md-6 mb-3">
+<label>Appointment Date</label>
+<input type="date" class="form-control" required>
+</div>
+
+<div class="col-md-6 mb-3">
+<label>Appointment Time</label>
+<input type="time" class="form-control" required>
+</div>
+
+<div class="col-12 mb-3">
+<label>Message</label>
+<textarea class="form-control" rows="3" placeholder="Write message"></textarea>
+</div>
+
+<div class="text-center">
+<button type="submit" class="btn submit-btn">Book Appointment</button>
+</div>
+
+</div>
+
+</form>
+
+</div>
+</div>
+</div>
+</div>
+<!-- Doctor Card6 -->
+        <div class="col-md-4">
+            <div class="doctor-card">
+                <div class="doctor-img">
+                    <img src="Dr.Pallavi Joshi.jpg" alt="">
+                    <div class="overlay">
+                       <a href="#" class="btn" data-bs-toggle="modal" data-bs-target="#doctorModal6">
+                View More
+              </a>
+                    </div>
+                </div>
+                <div class="doctor-info">
+                    <h5>Dr.Pallavi Joshi</h5>
+                    <p>Certified diabetic educator,<br>Maternal & Child Nutritionist</p>
+                     <button class="btn appointment-btn" data-bs-toggle="modal" data-bs-target="#appointmentModal6">
+Appointment
+</button>
+                </div>
+            </div>
+        </div>
+<!--popup6-->
+<div class="modal fade" id="doctorModal6" tabindex="-1">
+  <div class="modal-dialog modal-xl modal-dialog-centered">
+    <div class="modal-content border-0 shadow-lg">
+
+      <div class="modal-body p-0">
+
+        <div class="row g-0">
+
+          <!-- LEFT SIDE -->
+          <div class="col-md-4 bg-orange text-center p-4">
+            
+            <div class="doctor-img-wrapper">
+              <img src="Dr.Pallavi Joshi.jpg" class="img-fluid rounded doctor-img" alt="Doctor">
+            </div>
+
+            <div class="doctor-name-box mt-4">
+              <i class="fa fa-user me-2"></i>
+      Dr.Pallavi Joshi
+            <p>Certified diabetic educator,<br>Maternal & Child Nutritionist</p>
+            </div>
+
+          </div>
+
+          <!-- RIGHT SIDE -->
+          <div class="col-md-8 p-4">
+
+            <!-- Tabs -->
+            <ul class="nav nav-pills mb-4" id="doctorTab" role="tablist">
+              <li class="nav-item">
+                <button class="nav-link active" data-bs-toggle="pill" data-bs-target="#basic6">
+                  BASIC INFORMATION
+                </button>
+              </li>
+              <li class="nav-item">
+                <button class="nav-link" data-bs-toggle="pill" data-bs-target="#teaching6">
+                  TEACHING EXPERIENCE
+                </button>
+              </li>
+              <li class="nav-item">
+                <button class="nav-link" data-bs-toggle="pill" data-bs-target="#social6">
+                  SOCIAL COMMITMENTS
+                </button>
+              </li>
+            </ul>
+
+            <!-- Tab Content -->
+            <div class="tab-content">
+
+              <!-- BASIC INFO -->
+              <div class="tab-pane fade show active" id="basic6">
+                <div class="info-box">
+                  <i class="fa fa-check text-warning me-2"></i>
+             Since 1988 practicing as physician in Karad
+                </div>
+             
+             <h5>Schedule</h5>
+                <ul>
+                  <li>Visiting Days:</li>
+                  <li>Time Slot:</li>
+                </ul>
+                </div>
+              <!-- TEACHING -->
+              <div class="tab-pane fade" id="teaching6">
+                <div class="info-box">
+                  <i class="fa fa-check text-warning me-2"></i>
+                Ex. lecturer in General Medicine in Krishna Medical College-Karad.
+                </div>
+              </div>
+
+              <!-- SOCIAL -->
+              <div class="tab-pane fade" id="social6">
+                <div class="info-box">
+                  <i class="fa fa-check text-warning me-2"></i>
+                 Started Vastusthiti Health Club. The club did regular medical check up of its diabetic members and arranged lectures of leading authorities at regular intervals
+                </div>
+                <div class="info-box">
+                  <i class="fa fa-check text-warning me-2"></i>
+                to educate its members and general public about diabetes mellitus.
+                </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    </div>
+  </div>
+</div>
+</div>
+<!--popup-->
+<!-- Appointment Modal -->
+
+<div class="modal fade" id="appointmentModal6" tabindex="-1">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+
+<div class="modal-header">
+<h5 class="modal-title">Book Appointment</h5>
+<button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+</div>
+
+<div class="modal-body">
+
+<form>
+
+<div class="row">
+
+<div class="col-md-6 mb-3">
+<label>Full Name</label>
+<input type="text" class="form-control" placeholder="Enter your name" required>
+</div>
+
+<div class="col-md-6 mb-3">
+<label>Email</label>
+<input type="email" class="form-control" placeholder="Enter your email">
+</div>
+
+<div class="col-md-6 mb-3">
+<label>Phone</label>
+<input type="tel" class="form-control" placeholder="Enter phone number" required>
+</div>
+
+<div class="col-md-6 mb-3">
+<label>Select Doctor</label>
+<select class="form-control">
+<option>Dr.Pallavi Joshi</option>
+
+</select>
+</div>
+
+<div class="col-md-6 mb-3">
+<label>Appointment Date</label>
+<input type="date" class="form-control" required>
+</div>
+
+<div class="col-md-6 mb-3">
+<label>Appointment Time</label>
+<input type="time" class="form-control" required>
+</div>
+
+<div class="col-12 mb-3">
+<label>Message</label>
+<textarea class="form-control" rows="3" placeholder="Write message"></textarea>
+</div>
+
+<div class="text-center">
+<button type="submit" class="btn submit-btn">Book Appointment</button>
+</div>
+
+</div>
+
+</form>
+
+</div>
+</div>
+</div>
+</div>
+<!-- Doctor Card7 -->
+        <div class="col-md-4">
+            <div class="doctor-card">
+                <div class="doctor-img">
+                    <img src="Dr. Gandhar Kulkarni.jpg" alt="">
+                    <div class="overlay">
+                       <a href="#" class="btn" data-bs-toggle="modal" data-bs-target="#doctorModal7">
+                View More
+              </a>
+                    </div>
+                </div>
+                <div class="doctor-info">
+                    <h5>Dr. Gandhar Kulkarni</h5>
+                    <p> Pulmonology & Critical
+Care Specialist</p>
+ <button class="btn appointment-btn" data-bs-toggle="modal" data-bs-target="#appointmentModal7">
+Appointment
+</button>
+                </div>
+            </div>
+        </div>
+<!--popup7-->
+<div class="modal fade" id="doctorModal7" tabindex="-1">
+  <div class="modal-dialog modal-xl modal-dialog-centered">
+    <div class="modal-content border-0 shadow-lg">
+
+      <div class="modal-body p-0">
+
+        <div class="row g-0">
+
+          <!-- LEFT SIDE -->
+          <div class="col-md-4 bg-orange text-center p-4">
+            
+            <div class="doctor-img-wrapper">
+              <img src="Dr. Gandhar Kulkarni.jpg" class="img-fluid rounded doctor-img" alt="Doctor">
+            </div>
+
+            <div class="doctor-name-box mt-4">
+              <i class="fa fa-user me-2"></i>
+    Dr. Gandhar Kulkarni
+            <p><i class="fas fa-user-md"></i> Pulmonology & Critical
+Care Specialist</p>
+            </div>
+
+          </div>
+
+          <!-- RIGHT SIDE--> 
+          <div class="col-md-8 p-4">
+
+            <!-- Tabs--> 
+            <ul class="nav nav-pills mb-4" id="doctorTab" role="tablist">
+              <li class="nav-item">
+                <button class="nav-link active" data-bs-toggle="pill" data-bs-target="#basic7">
+                  BASIC INFORMATION
+                </button>
+              </li>
+              <li class="nav-item">
+                <button class="nav-link" data-bs-toggle="pill" data-bs-target="#teaching7">
+                  TEACHING EXPERIENCE
+                </button>
+              </li>
+              <li class="nav-item">
+                <button class="nav-link" data-bs-toggle="pill" data-bs-target="#social7">
+                  SOCIAL COMMITMENTS
+                </button>
+              </li>
+            </ul>
+
+            <!-- Tab Content--> 
+            <div class="tab-content">
+
+              <!-- BASIC INFO-->
+              <div class="tab-pane fade show active" id="basic7">
+                <div class="info-box">
+                  <i class="fa fa-check text-warning me-2"></i>
+            Since 1977 practicing as General Practitioner in Karad.
+                </div>
+                <div class="info-box">
+                  <i class="fa fa-check text-warning me-2"></i>
+           Founder Director of Jankalyan Nagari Sahakari Patsanstha Maryadit Karad
+                </div>
+                
+           
+             <h5>Schedule</h5>
+                <ul>
+                  <li>Visiting Days:</li>
+                  <li>Time Slot:</li>
+                </ul>
+                  </div>
+              <!-- TEACHING-->
+              <div class="tab-pane fade" id="teaching7">
+                <div class="info-box">
+                  <i class="fa fa-check text-warning me-2"></i>
+                No data Available
+                </div>
+              </div> 
+
+              <!-- SOCIAL--> 
+              <div class="tab-pane fade" id="social7">
+                <div class="info-box">
+                  <i class="fa fa-check text-warning me-2"></i>
+                 No Data Available
+                 </div>
+          </div>
+        </div>
+    </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+<!--popup-->
+<!-- Appointment Modal -->
+
+<div class="modal fade" id="appointmentModal7" tabindex="-1">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+
+<div class="modal-header">
+<h5 class="modal-title">Book Appointment</h5>
+<button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+</div>
+
+<div class="modal-body">
+
+<form>
+
+<div class="row">
+
+<div class="col-md-6 mb-3">
+<label>Full Name</label>
+<input type="text" class="form-control" placeholder="Enter your name" required>
+</div>
+
+<div class="col-md-6 mb-3">
+<label>Email</label>
+<input type="email" class="form-control" placeholder="Enter your email">
+</div>
+
+<div class="col-md-6 mb-3">
+<label>Phone</label>
+<input type="tel" class="form-control" placeholder="Enter phone number" required>
+</div>
+
+<div class="col-md-6 mb-3">
+<label>Select Doctor</label>
+<select class="form-control">
+<option> Dr. Gandhar Kulkarni</option>
+
+</select>
+</div>
+
+<div class="col-md-6 mb-3">
+<label>Appointment Date</label>
+<input type="date" class="form-control" required>
+</div>
+
+<div class="col-md-6 mb-3">
+<label>Appointment Time</label>
+<input type="time" class="form-control" required>
+</div>
+
+<div class="col-12 mb-3">
+<label>Message</label>
+<textarea class="form-control" rows="3" placeholder="Write message"></textarea>
+</div>
+
+<div class="text-center">
+<button type="submit" class="btn submit-btn">Book Appointment</button>
+</div>
+
+</div>
+
+</form>
+
+</div>
+</div>
+</div>
+</div>
+<!-- Doctor Card8 -->
+        <div class="col-md-4">
+            <div class="doctor-card">
+                <div class="doctor-img">
+                    <img src="Dr Digvijay Chavan.jpg" alt="">
+                    <div class="overlay">
+                     <a href="#" class="btn " data-bs-toggle="modal" data-bs-target="#doctorModal8">
+                View More
+              </a>
+                    </div>
+                </div>
+                <div class="doctor-info">
+                    <h5>Dr.Digvijay Chavan</h5>
+                    <p>Gastroenterology</p>
+                     <button class="btn appointment-btn" data-bs-toggle="modal" data-bs-target="#appointmentModal8">
+Appointment
+</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+<!--popup8-->
+<div class="modal fade" id="doctorModal8" tabindex="-1">
+  <div class="modal-dialog modal-xl modal-dialog-centered">
+    <div class="modal-content border-0 shadow-lg">
+
+      <div class="modal-body p-0">
+
+        <div class="row g-0">
+
+          <!-- LEFT SIDE--> 
+          <div class="col-md-4 bg-orange text-center p-4">
+            
+            <div class="doctor-img-wrapper">
+              <img src="Dr Digvijay Chavan.jpg" class="img-fluid rounded doctor-img" alt="Doctor">
+            </div>
+
+            <div class="doctor-name-box mt-4">
+              <i class="fa fa-user me-2"></i>
+    Dr.Digvijay Chavan
+            <p><i class="fas fa-user-md"></i> Gastroenterology</p>
+            </div>
+
+          </div>
+
+          <!-- RIGHT SIDE-->
+          <div class="col-md-8 p-4">
+
+            <!-- Tabs--> 
+            <ul class="nav nav-pills mb-4" id="doctorTab" role="tablist">
+              <li class="nav-item">
+                <button class="nav-link active" data-bs-toggle="pill" data-bs-target="#basic8">
+                  BASIC INFORMATION
+                </button>
+              </li>
+              <li class="nav-item">
+                <button class="nav-link" data-bs-toggle="pill" data-bs-target="#teaching8">
+                  TEACHING EXPERIENCE
+                </button>
+              </li>
+              <li class="nav-item">
+                <button class="nav-link" data-bs-toggle="pill" data-bs-target="#social8">
+                  SOCIAL COMMITMENTS
+                </button>
+              </li>
+            </ul>
+
+            <!-- Tab Content--> 
+            <div class="tab-content">
+
+              <!-- BASIC INFO--> 
+              <div class="tab-pane fade show active" id="basic8">
+                <div class="info-box">
+                  <i class="fa fa-check text-warning me-2"></i>
+            Since 2007 practicing as physician in Karad
+                </div>
+                <div class="info-box">
+                  <i class="fa fa-check text-warning me-2"></i>
+          Grant Medical college && JJ group of hospitals- Mumbai
+                </div>
+                <div class="info-box">
+                  <i class="fa fa-check text-warning me-2"></i>
+          Government Hospital- Satara
+                </div>
+                
+           
+             <h5>Schedule</h5>
+                <ul>
+                  <li>Visiting Days:</li>
+                  <li>Time Slot:</li>
+                </ul>
+                  </div>
+              <!-- TEACHING-->
+              <div class="tab-pane fade" id="teaching8">
+                <div class="info-box">
+                  <i class="fa fa-check text-warning me-2"></i>
+               Undergraduate students at GMC Mumbai
+                </div>
+              </div>
+
+              <!-- SOCIAL--> 
+              <div class="tab-pane fade" id="social8  ">
+                <div class="info-box">
+                  <i class="fa fa-check text-warning me-2"></i>
+                 No Data Available
+                 </div>
+          </div>
+        </div>
+    </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+<!--popup-->
+<!-- Appointment Modal -->
+
+<div class="modal fade" id="appointmentModal8" tabindex="-1">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+
+<div class="modal-header">
+<h5 class="modal-title">Book Appointment</h5>
+<button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+</div>
+
+<div class="modal-body">
+
+<form>
+
+<div class="row">
+
+<div class="col-md-6 mb-3">
+<label>Full Name</label>
+<input type="text" class="form-control" placeholder="Enter your name" required>
+</div>
+
+<div class="col-md-6 mb-3">
+<label>Email</label>
+<input type="email" class="form-control" placeholder="Enter your email">
+</div>
+
+<div class="col-md-6 mb-3">
+<label>Phone</label>
+<input type="tel" class="form-control" placeholder="Enter phone number" required>
+</div>
+
+<div class="col-md-6 mb-3">
+<label>Select Doctor</label>
+<select class="form-control">
+<option>Dr.Digvijay Chavan</option>
+
+</select>
+</div>
+
+<div class="col-md-6 mb-3">
+<label>Appointment Date</label>
+<input type="date" class="form-control" required>
+</div>
+
+<div class="col-md-6 mb-3">
+<label>Appointment Time</label>
+<input type="time" class="form-control" required>
+</div>
+
+<div class="col-12 mb-3">
+<label>Message</label>
+<textarea class="form-control" rows="3" placeholder="Write message"></textarea>
+</div>
+
+<div class="text-center">
+<button type="submit" class="btn submit-btn">Book Appointment</button>
+</div>
+
+</div>
+
+</form>
+
+</div>
+</div>
+</div>
+</div>
+</section>
+
+ <!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+         <!-- Logo Image and Text Section -->
+        <div class="footer-logo-wrapper" style="display: flex; align-items: center; margin-bottom: 20px; gap: 10px;">
+          <!-- Image Tag: Yahan apni logo file ka path daalein -->
+          <img src="https://www.shreehospitalkarad.com/assets/img/Logo_Final_2.png" alt="Shree Hospital Logo" style="height: 50px; width: auto;">
+          
+          <div class="logo-text" style="font-size: 24px; font-weight: 700; font-family: 'Poppins', sans-serif;">
+            <span style="color: #1E9B85;">Shree</span><span style="color: rgba(255,255,255,0.85)">Hospital</span>
+          </div>
+        </div>
+
+        <p style="color: rgba(255,255,255,0.7); line-height: 1.6; font-size: 14px;">
+          Shree Hospital Karad is committed to delivering quality healthcare services with compassion, advanced technology, and patient-centered treatment. Your health and safety are always our top priority.
+        </p>
+        <div class="social-links">
+          <a href="https://www.facebook.com/people/Shree-Hospital-Karad/61587661328336/"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/shreehospitalkarad/"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.linkedin.com/company/shree-hospital-karad/"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+          
+          
+        </div>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="aboutus.html">Aboutus</a></li>
+          <li><a href="servies.html">Servies</a></li>
+          <li><a href="doctor.html">Doctors</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact-us.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Our Services</h4>
+        <ul class="footer-links">
+          <li><a href="servies.html">laboretory service</a></li>
+          <li><a href="servies.html">Cardiology</a></li>
+          <li><a href="servies.html">Neurology</a></li>
+          <li><a href="servies.html">Orthopedics</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact Info</h4>
+        <ul class="footer-contact" style="list-style: none;">
+          <li><i class="fas fa-map-marker-alt"></i> Shree Hospital,Rukmini Nagar, Karad</li>
+          <li><i class="fas fa-phone-alt"></i>  02164 221 082</li>
+          <li><i class="fas fa-envelope"></i>centremanager@nayesha.com</li>
+          <li><i class="fas fa-clock"></i>Open 24 hours</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">
+      <p>© 2026 ShreeHospital. All Rights Reserved. 
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+ <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+</body>
+</html>
